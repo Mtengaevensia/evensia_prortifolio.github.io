@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =============================================
+       META & SEO
+  ============================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Evensia — Software Developer, AI Enthusiast, IT Support Specialist & SEO Content Manager. Building smart digital solutions for businesses." />
+  <meta name="keywords" content="Evensia, Software Developer, AI Enthusiast, IT Support, SEO Content Manager, Web Development, Portfolio" />
+  <meta name="author" content="Evensia" />
+  <meta property="og:title" content="Evensia | Digital Solutions Architect" />
+  <meta property="og:description" content="Building smart digital solutions for businesses — Software, AI, IT & SEO." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Evensia | Digital Solutions Architect" />
+  <meta name="twitter:description" content="Building smart digital solutions for businesses." />
+  <title>Evensia | Digital Solutions Architect</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       CURSOR (custom animated dot)
+  ============================================= -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- =============================================
+       NAVIGATION
+  ============================================= -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#hero" class="nav-logo" aria-label="Evensia Home">
+        <span class="logo-bracket">[</span>Evensia<span class="logo-bracket">]</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <ul role="list">
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-link">Projects</a></li>
+        <li><a href="#services" class="mobile-link">Services</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- =============================================
+       HERO SECTION
+  ============================================= -->
+  <section class="hero" id="hero" aria-label="Hero Section">
+    <!-- Decorative grid lines -->
+    <div class="hero-grid" aria-hidden="true">
+      <div class="grid-line"></div><div class="grid-line"></div>
+      <div class="grid-line"></div><div class="grid-line"></div>
+      <div class="grid-line"></div>
+    </div>
+
+    <!-- Floating accent blobs -->
+    <div class="blob blob-1" aria-hidden="true"></div>
+    <div class="blob blob-2" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Status badge -->
+      <div class="status-badge reveal">
+        <span class="status-dot"></span>
+        Available for new projects
+      </div>
+
+      <h1 class="hero-name reveal">
+        <span class="name-line">Evensia</span>
+      </h1>
+
+      <p class="hero-tagline reveal">
+        Building <em>smart digital solutions</em><br />for businesses
+      </p>
+
+      <p class="hero-roles reveal">
+        Software Developer &nbsp;·&nbsp; AI Enthusiast &nbsp;·&nbsp; IT Support &nbsp;·&nbsp; SEO &amp; Content
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-envelope"></i> Contact Me
+        </a>
+        <a href="#projects" class="btn btn-ghost">
+          View Projects <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ABOUT SECTION
+  ============================================= -->
+  <section class="about section" id="about" aria-label="About Evensia">
+    <div class="container">
+      <div class="section-label reveal">01 — About</div>
+
+      <div class="about-grid">
+        <!-- Portrait side -->
+        <div class="about-visual reveal">
+          <div class="portrait-frame">
+            <div class="portrait-inner">
+              <i class="fas fa-user-astronaut portrait-icon" aria-hidden="true"></i>
+            </div>
+            <!-- Floating stat cards -->
+            <div class="stat-card stat-card-1">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card stat-card-2">
+              <span class="stat-number">30+</span>
+              <span class="stat-label">Projects Shipped</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="about-text reveal">
+          <h2 class="section-heading">
+            Turning complex problems into<br /><em>elegant digital solutions</em>
+          </h2>
+
+          <p class="about-body">
+            Hi, I'm <strong>Evensia</strong> — a multi-disciplinary tech professional with a passion for building things that work beautifully and intelligently. I sit at the intersection of software development, artificial intelligence, IT infrastructure, and digital marketing.
+          </p>
+          <p class="about-body">
+            My mission is to empower businesses with smart, scalable digital tools — whether that means building a custom web app, deploying an AI-powered workflow, hardening IT systems, or driving organic growth through strategic SEO content.
+          </p>
+
+          <div class="about-values">
+            <div class="value-item">
+              <i class="fas fa-bolt"></i>
+              <span>Fast & reliable delivery</span>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-brain"></i>
+              <span>AI-first thinking</span>
+            </div>
+            <div class="value-item">
+              <i class="fas fa-shield-halved"></i>
+              <span>Security-conscious</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SKILLS SECTION
+  ============================================= -->
+  <section class="skills section" id="skills" aria-label="Skills">
+    <div class="container">
+      <div class="section-label reveal">02 — Skills</div>
+      <h2 class="section-heading centered reveal">Core Competencies</h2>
+      <p class="section-sub reveal">A versatile toolkit built for the modern digital landscape.</p>
+
+      <div class="skills-grid">
+
+        <!-- Card 1 -->
+        <article class="skill-card reveal" aria-label="Software Development">
+          <div class="skill-icon-wrap">
+            <i class="fas fa-code" aria-hidden="true"></i>
+          </div>
+          <h3 class="skill-title">Software Development</h3>
+          <p class="skill-desc">Building robust, scalable applications with clean architecture and modern best practices.</p>
+          <div class="skill-tags">
+            <span>Python</span><span>JavaScript</span><span>HTML/CSS</span>
+            <span>React</span><span>Node.js</span><span>REST APIs</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>Full-Stack Dev</span>
+              <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>API Design</span>
+              <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="skill-card reveal" aria-label="Artificial Intelligence">
+          <div class="skill-icon-wrap accent-ai">
+            <i class="fas fa-robot" aria-hidden="true"></i>
+          </div>
+          <h3 class="skill-title">Artificial Intelligence</h3>
+          <p class="skill-desc">Designing intelligent systems that automate, predict, and enhance human decisions.</p>
+          <div class="skill-tags">
+            <span>Machine Learning</span><span>NLP</span><span>OpenAI</span>
+            <span>TensorFlow</span><span>Prompt Eng.</span><span>LLMs</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>ML Models</span>
+              <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>AI Integration</span>
+              <div class="skill-track"><div class="skill-fill" data-width="87"></div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="skill-card reveal" aria-label="IT Support and Systems">
+          <div class="skill-icon-wrap accent-it">
+            <i class="fas fa-server" aria-hidden="true"></i>
+          </div>
+          <h3 class="skill-title">IT Support &amp; Systems</h3>
+          <p class="skill-desc">Managing infrastructure, networks, and end-user environments with efficiency and care.</p>
+          <div class="skill-tags">
+            <span>Windows/Linux</span><span>Networking</span><span>Cloud</span>
+            <span>Active Directory</span><span>Cybersecurity</span><span>Help Desk</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>System Admin</span>
+              <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Network Config</span>
+              <div class="skill-track"><div class="skill-fill" data-width="83"></div></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="skill-card reveal" aria-label="SEO and Content Management">
+          <div class="skill-icon-wrap accent-seo">
+            <i class="fas fa-magnifying-glass-chart" aria-hidden="true"></i>
+          </div>
+          <h3 class="skill-title">SEO &amp; Content Management</h3>
+          <p class="skill-desc">Growing organic visibility and engagement through data-driven content strategies.</p>
+          <div class="skill-tags">
+            <span>On-Page SEO</span><span>Technical SEO</span><span>Google Analytics</span>
+            <span>Content Strategy</span><span>WordPress</span><span>Copywriting</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item">
+              <span>SEO Optimization</span>
+              <div class="skill-track"><div class="skill-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Content Strategy</span>
+              <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       PROJECTS SECTION
+  ============================================= -->
+  <section class="projects section" id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-label reveal">03 — Projects</div>
+      <h2 class="section-heading centered reveal">Selected Work</h2>
+      <p class="section-sub reveal">A snapshot of real-world solutions I've designed and shipped.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" aria-label="AI Chatbot Assistant project">
+          <div class="project-number">01</div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
+            <div class="project-links">
+              <a href="#" class="icon-link" aria-label="GitHub repository" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo" title="Live Demo">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI Chatbot Assistant</h3>
+          <p class="project-desc">An intelligent customer support chatbot powered by GPT-4 that handles FAQs, ticket routing, and escalation — reducing support load by 60%.</p>
+          <div class="project-tech">
+            <span>Python</span><span>OpenAI API</span><span>FastAPI</span><span>React</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card project-featured reveal" aria-label="E-Commerce Platform project">
+          <div class="project-number">02</div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-store" aria-hidden="true"></i></div>
+            <div class="project-links">
+              <a href="#" class="icon-link" aria-label="GitHub repository" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo" title="Live Demo">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">E-Commerce Platform</h3>
+          <p class="project-desc">Full-stack e-commerce solution with payment integration, inventory management, and an AI product recommendation engine driving 30% higher AOV.</p>
+          <div class="project-tech">
+            <span>Node.js</span><span>React</span><span>MongoDB</span><span>Stripe</span><span>ML</span>
+          </div>
+          <div class="featured-tag">Featured</div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" aria-label="IT Network Monitor project">
+          <div class="project-number">03</div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
+            <div class="project-links">
+              <a href="#" class="icon-link" aria-label="GitHub repository" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo" title="Live Demo">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">IT Network Monitor</h3>
+          <p class="project-desc">Real-time network monitoring dashboard with anomaly detection alerts, device inventory, and automated incident reports for SME IT teams.</p>
+          <div class="project-tech">
+            <span>Python</span><span>Grafana</span><span>Prometheus</span><span>Docker</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal" aria-label="SEO Content Engine project">
+          <div class="project-number">04</div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+            <div class="project-links">
+              <a href="#" class="icon-link" aria-label="GitHub repository" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="icon-link" aria-label="Live demo" title="Live Demo">
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">SEO Content Engine</h3>
+          <p class="project-desc">Automated content-brief generator using NLP keyword clustering and competitor gap analysis — boosted organic traffic by 145% in 6 months.</p>
+          <div class="project-tech">
+            <span>Python</span><span>NLP</span><span>Google API</span><span>WordPress</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       SERVICES SECTION
+  ============================================= -->
+  <section class="services section" id="services" aria-label="Services">
+    <div class="container">
+      <div class="section-label reveal">04 — Services</div>
+      <h2 class="section-heading centered reveal">What I Offer</h2>
+      <p class="section-sub reveal">End-to-end digital services tailored to your business goals.</p>
+
+      <div class="services-grid">
+
+        <article class="service-card reveal" aria-label="Web Development service">
+          <div class="service-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+          <h3>Web Development</h3>
+          <p>Custom, performant websites and web applications built with modern frameworks, clean code, and exceptional user experience at the core.</p>
+          <ul class="service-list" role="list">
+            <li><i class="fas fa-check"></i> Responsive design</li>
+            <li><i class="fas fa-check"></i> Full-stack solutions</li>
+            <li><i class="fas fa-check"></i> CMS integration</li>
+          </ul>
+        </article>
+
+        <article class="service-card service-accent reveal" aria-label="AI Solutions service">
+          <div class="service-icon"><i class="fas fa-microchip" aria-hidden="true"></i></div>
+          <h3>AI Solutions</h3>
+          <p>From intelligent chatbots to predictive analytics, I integrate AI capabilities that automate workflows and unlock new business value.</p>
+          <ul class="service-list" role="list">
+            <li><i class="fas fa-check"></i> LLM-powered apps</li>
+            <li><i class="fas fa-check"></i> Process automation</li>
+            <li><i class="fas fa-check"></i> Data insights</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal" aria-label="IT Support service">
+          <div class="service-icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
+          <h3>IT Support</h3>
+          <p>Reliable IT infrastructure setup, maintenance, security hardening, and responsive support to keep your business running smoothly.</p>
+          <ul class="service-list" role="list">
+            <li><i class="fas fa-check"></i> System administration</li>
+            <li><i class="fas fa-check"></i> Network setup</li>
+            <li><i class="fas fa-check"></i> Cybersecurity basics</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal" aria-label="SEO Optimization service">
+          <div class="service-icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
+          <h3>SEO Optimization</h3>
+          <p>Data-backed SEO strategies and compelling content that rank, convert, and grow your audience organically over time.</p>
+          <ul class="service-list" role="list">
+            <li><i class="fas fa-check"></i> Technical SEO audits</li>
+            <li><i class="fas fa-check"></i> Keyword strategy</li>
+            <li><i class="fas fa-check"></i> Content creation</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       CONTACT SECTION
+  ============================================= -->
+  <section class="contact section" id="contact" aria-label="Contact Evensia">
+    <div class="container">
+      <div class="section-label reveal">05 — Contact</div>
+      <h2 class="section-heading centered reveal">Let's Build Something</h2>
+      <p class="section-sub reveal">Have a project in mind? I'd love to hear about it.</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <h3 class="contact-info-heading">Get In Touch</h3>
+          <p class="contact-info-body">Whether you're looking to launch a new product, optimize your digital presence, or solve a tricky tech problem — I'm here for it.</p>
+
+          <div class="contact-links">
+            <a href="mailto:evensia@email.com" class="contact-link" aria-label="Send email to Evensia">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">evensia@email.com</span>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com/in/evensia" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Evensia on LinkedIn">
+              <div class="contact-link-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/evensia</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/evensia" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Evensia on GitHub">
+              <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/evensia</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact Form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jane" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option>Web Development</option>
+                <option>AI Solutions</option>
+                <option>IT Support</option>
+                <option>SEO Optimization</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+
+            <!-- Success message (hidden by default) -->
+            <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+              <i class="fas fa-circle-check"></i>
+              Message sent! I'll get back to you within 24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>Evensia<span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Evensia. Built with precision &amp; passion.
+      </p>
+      <div class="footer-socials">
+        <a href="https://github.com/evensia" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/evensia" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:evensia@email.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
